@@ -1,5 +1,5 @@
 
-# Bài tập training PHP phần 1 - Tìm hiểu về Laravel 5
+# Bài tập training PHP phần 1 - Tìm hiểu về Laravel 6
 
 ## Mô tả
 
@@ -33,8 +33,8 @@ Xây dựng trang web quản lý timesheet với các mô tả nghiệp vụ nh�
 https://docs.google.com/spreadsheets/d/1lhyZvU-bJPku-5yVCI7dbVoVx4nq9F-TG71w7fsd4A8/edit?usp=sharing
 
 2.3. Tạo code base cơ bản:
-- PHP 7.2.x, MariaDB 10.1.x
-- Laravel 5.5 LTS
+- PHP 7.4.x, MariaDB 10.1.x
+- Laravel 6 LTS
 - migrations
 - layouts
 
@@ -44,3 +44,12 @@ https://docs.google.com/spreadsheets/d/1lhyZvU-bJPku-5yVCI7dbVoVx4nq9F-TG71w7fsd
 - Màn hình danh sách timesheet
 - Màn hình view chi tiết timesheet
 - Màn hình chỉnh sửa timesheet
+
+2.5. Các chức năng nâng cao
+- Chức năng phân quyền trong hệ thống:
+ - Tạo thêm field role trong table users, định nghĩa quyền cho các user trong hệ thống như sau 
+| Role      | Function |
+| ----------- | ----------- |
+| Admin      | Title       |
+| Manager   | Text        |
+| User   | Text        |
