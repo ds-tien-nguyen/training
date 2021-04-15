@@ -46,10 +46,13 @@ https://docs.google.com/spreadsheets/d/1lhyZvU-bJPku-5yVCI7dbVoVx4nq9F-TG71w7fsd
 - Màn hình chỉnh sửa timesheet
 
 2.5. Các chức năng nâng cao
-- Chức năng phân quyền trong hệ thống:
+- Chức năng phân quyền trong hệ thống (Yêu cầu tìm hiểu về Policy trong Laravel):
   - Tạo thêm field role trong table users, định nghĩa quyền cho các user trong hệ thống như sau 
-
-|   |   |
-|---|---|
-|   |   |
-|   |   |
+    |  Roles | Function  |
+    |---|---|
+    | Admin  | Có thể duyệt timesheet của tất cả mọi người, có thể quản lý user, export timesheet  |
+    | Manager  |  Chỉ duyệt được timesheet của những người thuộc quyền mình quản lý |
+    | User  |  Chỉ tạo được timesheet và sửa được timesheet của bản thân mình |
+  - Khi user truy cập vào các page mà mình ko có quyền truy cập thì xử lý lỗi 403
+- Thêm màn hình hiển thị list time sheet bằng calendar  (Yêu cầu sử dụng 1 plugin js)
+- Sử dụng bootstrap 4 để customize lại giao diện của hệ thống
