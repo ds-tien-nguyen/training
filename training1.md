@@ -1,5 +1,5 @@
 
-# Bài tập training PHP phần 1 - Tìm hiểu về Laravel 6
+# Bài tập training PHP phần 1 - Tìm hiểu về Laravel 9
 
 ## Mô tả
 
@@ -33,8 +33,8 @@ Xây dựng trang web quản lý timesheet với các mô tả nghiệp vụ nh�
 https://docs.google.com/spreadsheets/d/1lhyZvU-bJPku-5yVCI7dbVoVx4nq9F-TG71w7fsd4A8/edit?usp=sharing
 
 2.3. Tạo code base cơ bản:
-- PHP 7.4.x, MariaDB 10.1.x
-- Laravel 6 LTS
+- PHP 8.1, MariaDB
+- Laravel 9 LTS
 - migrations
 - layouts
 
@@ -55,4 +55,4 @@ https://docs.google.com/spreadsheets/d/1lhyZvU-bJPku-5yVCI7dbVoVx4nq9F-TG71w7fsd
     | User  |  Chỉ tạo được timesheet và sửa được timesheet của bản thân mình |
   - Khi user truy cập vào các page mà mình ko có quyền truy cập thì xử lý lỗi 403
 - Thêm màn hình hiển thị list time sheet bằng calendar  (Yêu cầu sử dụng 1 plugin js)
-- Sử dụng bootstrap 4 để customize lại giao diện của hệ thống
+- Sử dụng bootstrap 5 để customize lại giao diện của hệ thống
