@@ -30,7 +30,7 @@ Xây dựng trang web quản lý timesheet với các mô tả nghiệp vụ nh�
 
 2.2. Xây dựng cấu trúc database. Tạo file GoogleSheet theo mẫu.
 
-https://docs.google.com/spreadsheets/d/1lhyZvU-bJPku-5yVCI7dbVoVx4nq9F-TG71w7fsd4A8/edit?usp=sharing
+https://docs.google.com/spreadsheets/d/1yo7DOcFnZ939w4OnVug2Pgaa1EVY7XquwHXn3pt_eZ8/edit?usp=sharing
 
 2.3. Tạo code base cơ bản:
 - PHP 8.1, MariaDB
