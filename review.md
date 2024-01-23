@@ -21,6 +21,7 @@
 - Đặt tên phải ngắn gọn dễ hiểu
 - Đặt tên phải đúng chính tả
 - Không được phép sử dụng [magic numbers](http://c2.com/cgi/wiki?MagicNumber)
+  
     _Bad code_
     ```php
     $total = 1.08 * $price;
@@ -34,6 +35,7 @@
 - Không được có các phần code bị comment out
 - Không có các đoạn code không chạy, các đoạn code không sử dụng đến
 - Không  viết các đoạn code mà đã có sẵn trong các lib
+  
     _Bad code_
     ```php
     $startDate = strtotime('2022-10-14');
@@ -51,11 +53,13 @@
     ```
 - Code không được lặp lại
 - Không sử dụng các expression dài dòng và khó hiểu
+  
     _Bad code_
     ```php
     $a =  (true == true ? 'A' : 'B') ? 'C' : 'D'; 
     ```
 - Không đặt tên biến có chứa các từ ngữ phủ định gây khó hiểu như no, not...
+  
     _Bad code_
     ```php
     $hasNoValues = true;
