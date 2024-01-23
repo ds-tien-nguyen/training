@@ -4,6 +4,7 @@
 
 - **Code phải hoạt động**
 - Code phải dễ đọc hiểu (Sách tham khảo : The art of readable code)
+
     _Bad code_
     ```php
     function getUser() {}
