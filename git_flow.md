@@ -134,6 +134,7 @@ git log --no-merges v0.2...v0.1
 - Một task cần phải được thực hiện trên một branch phụ, không được thực hiện trực tiếp trên branch chính
 - Một task trước khi merge vào branch chính cần được
 	- Merge code mới nhất từ branch chính đã checkout
+	- Test theo testcase và fix hết các bug trên feature branch
 	- Tối thiểu hóa số commit phát sinh, tốt nhất nên là 1 commit trên 1 branch phụ
 	- Viết commit message theo đúng quy ước
 	- Tạo merge request
@@ -161,7 +162,10 @@ Giả sử một developer cần làm một task được giao bởi redmine iss
 #### 3.2.2, Code
 - ....
 
-#### 3.2.3, Tạo commit
+#### 3.2.3, Test theo testcase
+- Test theo testcase sẵn có của tester, nếu dự án chưa có testcase thì phải test theo quan điểm chung của công ty
+
+#### 3.2.4, Tạo commit
 
 - Xem trạng thái hiện tại trên branch
 	```
@@ -201,7 +205,7 @@ Giả sử một developer cần làm một task được giao bởi redmine iss
         - Resolves #20001
         {BLANK LINE}
         ```
-#### 3.2.4, (Optional) Gộp commit (Áp dụng nếu đã commit >= 2 commit trên branch)
+#### 3.2.5, (Optional) Gộp commit (Áp dụng nếu đã commit >= 2 commit trên branch)
 
 - Kiểm tra số lượng commit từ commit tree:
 
@@ -218,7 +222,7 @@ use f (fixup) option
 
 (Chú ý: `HEAD~2` là ví dụ với trường hợp cần gộp 2 commit, trường hợp cần gộp 3 commit là `HEAD~3`, tương tự `HEAD~4`, ...)
 
-#### 3.2.5, Kiểm tra và cập nhật thay đổi mới nhất có thể phát sinh
+#### 3.2.6, Kiểm tra và cập nhật thay đổi mới nhất có thể phát sinh
 
 - Cập nhật git reference
 	```
@@ -230,7 +234,7 @@ use f (fixup) option
     ```
 - Sửa conflict
 
-#### 3.2.5, Tạo merge request
+#### 3.2.7, Tạo merge request
 
 - Push code
 	```
@@ -239,9 +243,9 @@ use f (fixup) option
 - Tạo merge request với nhánh develop trên Github, Gitlab, ...
 - Assign merge request cho người review code
 
-#### 3.2.6, Technical leader review code
+#### 3.2.8, Technical leader review code
 
-#### 3.2.7, Sửa comment
+#### 3.2.9, Sửa comment
 
 - Trong trường hợp review code có comment, developer cần sửa lại code theo comment
 - Thực hiện lại các bước 3.2.3 (với commit message bất kỳ)
@@ -255,7 +259,7 @@ use f (fixup) option
 	```
     git push -f origin feature-20001
     ```
-#### 3.2.8, Technial leader merge code và xóa branch
+#### 3.2.10, Technial leader merge code và xóa branch
 
 - Dùng chức năng merge và xóa branch trên Github, Gitlab
 - Hoặc sử dụng lệnh
