@@ -134,7 +134,7 @@ git log --no-merges v0.2...v0.1
 - Một task cần phải được thực hiện trên một branch phụ, không được thực hiện trực tiếp trên branch chính
 - Một task trước khi merge vào branch chính cần được
 	- Merge code mới nhất từ branch chính đã checkout
-	- Test theo testcase và fix hết các bug trên feature branch
+	- Unit test theo testcase và fix hết các bug trên feature branch
 	- Tối thiểu hóa số commit phát sinh, tốt nhất nên là 1 commit trên 1 branch phụ
 	- Viết commit message theo đúng quy ước
 	- Tạo merge request
@@ -162,8 +162,9 @@ Giả sử một developer cần làm một task được giao bởi redmine iss
 #### 3.2.2, Code
 - ....
 
-#### 3.2.3, Test theo testcase
-- Test theo testcase sẵn có của tester, nếu dự án chưa có testcase thì phải test theo quan điểm chung của công ty
+#### 3.2.3, Unit test theo testcase
+- Unit test theo testcase sẵn có của tester, nếu dự án chưa có testcase thì phải test theo quan điểm chung của công ty.
+- Yêu cầu trước khi tạo commit phải fix hết các bug khi unit test.
 
 #### 3.2.4, Tạo commit
 
