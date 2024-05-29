@@ -33,7 +33,7 @@ Các branch chính bao gồm:
 
 #### 2.1.2, develop
 
-- Là branch chứa code mới nhất trong quá trình phát triển (sau khi code, review), đang đợi test và fixbug.
+- Là branch chứa code mới nhất trong quá trình phát triển (sau khi code, unit test, review), đang đợi tester test lại và fixbug.
 - Thường được deploy trên môi trường testing.
 
 ### 2.2, Branch phụ
